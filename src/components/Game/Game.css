@@ -1,0 +1,60 @@
+/* structure */
+
+.items-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 15px 0;
+    overflow: hidden;
+    max-width: 330px;
+}
+
+.items-container .coin {
+    margin: 6px;
+}
+
+.controls-container {
+    display: block;
+    justify-content: space-between;
+    width: 100%;
+
+    @media (min-width: 768px) {
+        display: flex;
+        width: 70%;
+    }
+}
+
+.controls-container div {
+    margin: 20px;
+}
+
+.controls-container div:not(.highlight) {
+    pointer-events: none;
+}
+
+.controls-container div:not(.highlight) .secondary {
+    opacity: .5;
+    background-color: #ccc;
+}
+
+/* coins */
+.coin {
+    display: block;
+    position: relative;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: linear-gradient(221deg, #FFD700 50%, #000000 50%);
+    background-size: 67px 60px;
+    box-shadow: 1px 1px 3px #ccc;
+}
+
+.coin:hover {
+    transform: scale(1.1);
+}
+
+.highlight {
+    background: #5aa27b63;
+    padding: 5px 20px 20px;
+    border-radius: 10px;
+}
