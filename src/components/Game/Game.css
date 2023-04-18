@@ -41,12 +41,17 @@
 .coin {
     display: block;
     position: relative;
-    width: 34px;
-    height: 34px;
+    width: 14px;
+    height: 14px;
     border-radius: 50%;
     background: linear-gradient(221deg, #FFD700 50%, #000000 50%);
     background-size: 67px 60px;
     box-shadow: 1px 1px 3px #ccc;
+
+    @media (max-width) {
+        width: 34px;
+        height: 34px;
+    }
 }
 
 .coin:hover {
